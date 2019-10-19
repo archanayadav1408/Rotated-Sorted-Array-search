@@ -1,3 +1,4 @@
+// comment
 int Solution::search(const vector<int> &A, int x) {
 int n=A.size();
 int st=0;
