@@ -8,34 +8,27 @@ int mid;
     mid = (st+end)/2;
     if(A[mid]==x)
         return mid;
-    if(A[st]>A[end])
-    {
-        if(A[mid]>=A[st])
-        {
+    if(A[st]>A[end]){
+        if(A[mid]>=A[st]){
             if(A[mid]>x && x>=A[st])
                  end=mid-1;
             else
                    st=mid+1;
         }
-        else
-        {
+        else{
             if(x<=A[end] && x>A[mid])
                     st=mid+1;
             else
                  end=mid-1;
         }
     }
-    else
-    {
+    else{
         if(A[mid]>x) 
             end=mid-1;
         else
            st=mid+1;
     }
 }
-
-
-    
 return -1;    
     
 }
